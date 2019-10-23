@@ -5,7 +5,7 @@ data "aws_iam_policy_document" "patching_config_trust" {
 
     principals {
       type        = "Service"
-      identifiers = ["ec2.amazonaws.com"]
+      identifiers = ["ec2.amazonaws.com","ssm.amazonaws.com"]
     }
   }
 }
