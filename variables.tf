@@ -4,6 +4,10 @@ variable "application_tag_name" {
 variable "environment" {
 }
 
+variable "ssm_patching_logs_bucket" {
+  type = "string"
+}
+
 variable "rejected_patches" {
   type        = "list"
   description = "A list with rejected patches to not apply due to incompatibility with the environment"
