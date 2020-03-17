@@ -15,4 +15,6 @@ resource "aws_iam_policy" "passrole-policy" {
   ]
 }
 EOF
+
 }
+

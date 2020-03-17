@@ -5,3 +5,4 @@ resource "aws_iam_policy" "patching_policy" {
 
   policy = data.aws_iam_policy_document.this_patch.json
 }
+

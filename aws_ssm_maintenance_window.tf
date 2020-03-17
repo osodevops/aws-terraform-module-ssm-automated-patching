@@ -6,3 +6,4 @@ resource "aws_ssm_maintenance_window" "patching_window" {
   duration          = 5
   cutoff            = 0
 }
+

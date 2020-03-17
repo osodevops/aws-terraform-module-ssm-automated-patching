@@ -7,3 +7,4 @@ resource "aws_ssm_maintenance_window_target" "patching_window_target" {
     values = [var.application_tag_name]
   }
 }
+
