@@ -50,8 +50,6 @@ variable "ssm_patching_logs_bucket" {
   description = "Bucket name of outputted log information from each automation task run."
 }
 
-
-
 variable "common_tags" {
   type = map(string)
 }
