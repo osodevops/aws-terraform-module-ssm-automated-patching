@@ -17,4 +17,6 @@ resource "aws_iam_policy" "s3-logs-policy" {
   ]
 }
 EOF
+
 }
+

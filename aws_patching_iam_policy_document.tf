@@ -1,11 +1,11 @@
 data "aws_iam_policy_document" "patching_config_trust" {
   statement {
-    effect = "Allow"
+    effect  = "Allow"
     actions = ["sts:AssumeRole"]
 
     principals {
       type        = "Service"
-      identifiers = ["ec2.amazonaws.com","ssm.amazonaws.com"]
+      identifiers = ["ec2.amazonaws.com", "ssm.amazonaws.com"]
     }
   }
 }
@@ -32,3 +32,4 @@ data "aws_iam_policy_document" "this_patch" {
     resources = ["arn:aws:ec2:*:*:instance/*"]
   }
 }
+
